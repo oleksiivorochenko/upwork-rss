@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "db",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "upwork-rss",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["dist/src/db/entity/**/*"],
+  "migrations": ["dist/src/db/migration/**/*"],
+  "subscribers": ["dist/src/db/subscriber/**/*"],
+  "cli": {
+    "entitiesDir": "dist/src/db/entity",
+    "migrationsDir": "dist/src/db/migration",
+    "subscribersDir": "dist/src/db/subscriber"
+  }
+}
